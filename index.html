@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIWhiff — Casualties of the AI Revolution</title>
+<style>
+  :root { --bg:#0d0f0e; --panel:#151816; --ink:#e8e6df; --muted:#9a968c; --red:#c94f4f; --green:#7fb069; --line:#2a2e2b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:Georgia, 'Times New Roman', serif; line-height:1.55; }
+  header { padding:56px 24px 32px; text-align:center; border-bottom:1px solid var(--line); }
+  header h1 { margin:0; font-size:52px; letter-spacing:2px; }
+  header h1 span { color:var(--red); }
+  header p.tag { margin:10px 0 0; font-style:italic; color:var(--muted); font-size:19px; }
+  header p.sub { margin:18px auto 0; max-width:640px; color:var(--muted); font-size:15px; font-family:-apple-system, Helvetica, Arial, sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:32px 24px 64px; }
+  .method { background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--red); padding:18px 22px; margin-bottom:40px; font-family:-apple-system, Helvetica, Arial, sans-serif; font-size:14.5px; color:var(--muted); }
+  .method b { color:var(--ink); }
+  h2 { font-size:26px; letter-spacing:1px; margin:44px 0 8px; }
+  h2 small { display:block; font-family:-apple-system, Helvetica, Arial, sans-serif; font-size:13px; letter-spacing:0; color:var(--muted); margin-top:4px; }
+  .card { background:var(--panel); border:1px solid var(--line); padding:20px 24px; margin:16px 0; }
+  .card h3 { margin:0 0 4px; font-size:21px; }
+  .card h3 span.maker { color:var(--muted); font-weight:normal; font-size:16px; }
+  .meta { font-family:-apple-system, Helvetica, Arial, sans-serif; font-size:13px; color:var(--muted); margin-bottom:10px; }
+  .cause { display:inline-block; font-family:-apple-system, Helvetica, Arial, sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; border:1px solid var(--red); color:var(--red); padding:2px 8px; margin-bottom:10px; }
+  .cause.wounded { border-color:var(--green); color:var(--green); }
+  .card p { margin:8px 0; }
+  .card p.lesson { color:var(--muted); font-style:italic; }
+  .card p.lesson b { color:var(--ink); font-style:normal; }
+  footer { border-top:1px solid var(--line); padding:24px; text-align:center; color:var(--muted); font-family:-apple-system, Helvetica, Arial, sans-serif; font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>AI<span>WHIFF</span></h1>
+  <p class="tag">Catching the scent of what didn't make it.</p>
+  <p class="sub">A living ledger of the casualties of the AI revolution: the projects, startups, and products that shut down, went bankrupt, got sunset, or got absorbed — with the cause of death and the lesson, for each one.</p>
+</header>
+<main>
+  <div class="method">
+    <b>What counts as a casualty.</b> A shutdown, bankruptcy, discontinuation, or sunset of a notable AI project, startup, or product. When a standalone product is folded into a bigger one, that counts as a death of the standalone thing. Damaged-but-alive products and rolled-back launches go under <b>Walking Wounded</b>, not the graveyard. Causes are tagged: cost, trust, absorption, no market, or user revolt. Entries are summarized from public reporting, not reproduced. Seeded from the TechCrunch AI graveyard list (updated October 24, 2026). Last updated October 25, 2026. Draft — not yet deployed.
+  </div>
+
+  <h2>THE DEAD<small>Confirmed shutdowns, bankruptcies, and absorptions, newest first.</small></h2>
+
+  <div class="card">
+    <h3>Character.ai <span class="maker">— Character.ai</span></h3>
+    <div class="meta">Bankruptcy filed early October 2026 · Founded 2021</div>
+    <span class="cause">Trust</span>
+    <p>Companion-chatbot platform felled by lawsuits alleging its chatbots contributed to teen suicides and self-harm, a Disney cease-and-desist over its characters, and a ban on open-ended chats with under-18s. Google's reported $2.7B license-and-rehire deal in 2023 was the real exit; bankruptcy is the epilogue. Disney is the opening bidder at $20M for some of the IP; the app still runs while the sale closes, expected late November to early December 2026.</p>
+    <p class="lesson"><b>Lesson:</b> Companion AI aimed at kids carries existential legal risk, and no valuation survives it.</p>
+  </div>
+
+  <div class="card">
+    <h3>ChatGPT Atlas <span class="maker">— OpenAI</span></h3>
+    <div class="meta">Discontinued August 9, 2026 · Lived less than a year</div>
+    <span class="cause">No market</span>
+    <p>AI-powered web browser that never justified itself as a standalone product.</p>
+    <p class="lesson"><b>Lesson:</b> The browser is a distribution moat, not a product.</p>
+  </div>
+
+  <div class="card">
+    <h3>Relay <span class="maker">— Relay</span></h3>
+    <div class="meta">Shut down August 2026</div>
+    <span class="cause">Absorption</span>
+    <p>AI workflow-automation tool positioned as a Zapier alternative, shut down entirely.</p>
+    <p class="lesson"><b>Lesson:</b> Agent workflow tools die when the platforms they automate absorb the capability.</p>
+  </div>
+
+  <div class="card">
+    <h3>Huxe <span class="maker">— ex-Google NotebookLM developers</span></h3>
+    <div class="meta">Shut down May 2026</div>
+    <span class="cause">Absorption</span>
+    <p>AI audio app that turned text into podcast-style audio, squeezed out as larger platforms like Spotify offered the same features.</p>
+    <p class="lesson"><b>Lesson:</b> A feature the platforms can copy is not a company.</p>
+  </div>
+
+  <div class="card">
+    <h3>Yupp <span class="maker">— Yupp</span></h3>
+    <div class="meta">Shut down March 2026</div>
+    <span class="cause">No market</span>
+    <p>Free playground for comparing 800+ AI models side by side, with voting and crypto earnings. Never found product-market fit.</p>
+    <p class="lesson"><b>Lesson:</b> Comparison is a feature, not a destination.</p>
+  </div>
+
+  <div class="card">
+    <h3>Sora video-sharing platform <span class="maker">— OpenAI</span></h3>
+    <div class="meta">Shut down March 2026</div>
+    <span class="cause">Cost</span>
+    <p>Video-sharing platform closed over high operating costs and user-retention problems.</p>
+    <p class="lesson"><b>Lesson:</b> Video generation economics punish standalone apps.</p>
+  </div>
+
+  <div class="card">
+    <h3>Operator <span class="maker">— OpenAI</span></h3>
+    <div class="meta">Folded into ChatGPT, 2026</div>
+    <span class="cause">Absorption</span>
+    <p>Web-browsing AI agent folded into the main product; the standalone agent ceased to exist.</p>
+    <p class="lesson"><b>Lesson:</b> Agents become features, not products.</p>
+  </div>
+
+  <div class="card">
+    <h3>DALL-E, standalone <span class="maker">— OpenAI</span></h3>
+    <div class="meta">Shrunk into ChatGPT, 2026</div>
+    <span class="cause">Absorption</span>
+    <p>Image generation moved inside ChatGPT; DALL-E as a standalone product withered.</p>
+    <p class="lesson"><b>Lesson:</b> When the model host owns the interface, the tool brand dies.</p>
+  </div>
+
+  <div class="card">
+    <h3>Notion Mail <span class="maker">— Notion</span></h3>
+    <div class="meta">Shutdown September 2026 · Launched April 2025</div>
+    <span class="cause">No market</span>
+    <p>AI-focused email product closed because users preferred their own separate AI agents for email.</p>
+    <p class="lesson"><b>Lesson:</b> The agent layer eats the app layer.</p>
+  </div>
+
+  <div class="card">
+    <h3>Humane AI Pin <span class="maker">— Humane</span></h3>
+    <div class="meta">Business shut February 2025 · Raised $230M</div>
+    <span class="cause">Trust</span>
+    <p>Hyped AI wearable plagued by poor performance and a battery fire risk on its charging case. HP acquired most of the assets for $116M.</p>
+    <p class="lesson"><b>Lesson:</b> Hardware has to be ten times better, not just AI inside.</p>
+  </div>
+
+  <div class="card">
+    <h3>Figgs AI <span class="maker">— Figgs AI</span></h3>
+    <div class="meta">Ran 2023–2024 · 1M+ users</div>
+    <span class="cause">Cost</span>
+    <p>Customizable AI characters to create and chat with. Shut down because keeping the free service running cost too much.</p>
+    <p class="lesson"><b>Lesson:</b> Free AI companionship has no business model at scale.</p>
+  </div>
+
+  <h2>WALKING WOUNDED<small>Alive, but damaged — delayed, backlash-hit, or rolled back.</small></h2>
+
+  <div class="card">
+    <h3>Apple Siri AI <span class="maker">— Apple</span></h3>
+    <div class="meta">Delayed since the 2024 Apple Intelligence unveiling</div>
+    <span class="cause wounded">Trust</span>
+    <p>Repeatedly delayed; a $250M settlement over iPhone 16 AI marketing claims followed. The AI-powered Siri finally appeared in the iOS 27 beta in July 2026 and began rolling out to English-language users in October 2026.</p>
+    <p class="lesson"><b>Lesson:</b> Announcing AI before it exists is a liability.</p>
+  </div>
+
+  <div class="card">
+    <h3>Microsoft Recall <span class="maker">— Microsoft</span></h3>
+    <div class="meta">Announced Build 2024 · Delayed nearly a year</div>
+    <span class="cause wounded">Trust</span>
+    <p>AI "photographic memory" for Windows PCs met immediate privacy and security backlash. Controversy persists after a researcher built a tool extracting data Recall had captured.</p>
+    <p class="lesson"><b>Lesson:</b> Capability without consent is a casualty in slow motion.</p>
+  </div>
+
+  <div class="card">
+    <h3>Rabbit R1 <span class="maker">— Rabbit</span></h3>
+    <div class="meta">Unveiled CES January 2024 · 100,000 units sold</div>
+    <span class="cause wounded">User revolt</span>
+    <p>AI companion judged unfinished and unreliable at launch. Still being updated; Rabbit has announced "Project Cyberdeck," a portable device for vibe-coding.</p>
+    <p class="lesson"><b>Lesson:</b> Shipping the demo is not shipping the product.</p>
+  </div>
+
+  <div class="card">
+    <h3>ChatGPT super-app redesign <span class="maker">— OpenAI</span></h3>
+    <div class="meta">Launched July 9, 2026 · Rolled back</div>
+    <span class="cause wounded">User revolt</span>
+    <p>Redesign that turned ChatGPT into a "super app" with Chat, Codex, and Work modes, rolled back after user criticism.</p>
+    <p class="lesson"><b>Lesson:</b> Users punish redesigns that move their tools.</p>
+  </div>
+
+  <h2>THE PATTERN<small>What the ledger says so far.</small></h2>
+  <div class="card">
+    <p>Most of these did not die on technical merit. They died on cost, retention, trust, or absorption into a bigger product. The graveyard's through-line: the model hosts and the platforms eat everything that cannot defend a moat — and trust failures kill faster than technical ones.</p>
+    <p class="lesson"><b>Running count:</b> 11 dead, 4 walking wounded, as of October 25, 2026. About 42% of AI initiatives are ultimately abandoned by their corporate parents (S&amp;P Global Market Intelligence, via TechCrunch).</p>
+  </div>
+</main>
+<footer>
+  AIWhiff — casualties of the AI revolution. Seeded from the TechCrunch AI graveyard list (Lauren Forristal, updated October 24, 2026). Checked weekly; new casualties are added as they are verified. Draft — not deployed.
+</footer>
+</body>
+</html>
